@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 body {
@@ -13,6 +14,55 @@ h6 {
   font-family: "Share Tech Mono";
 }
 
-.redes-sociales {
-  font-family: "Roboto", sans-serif;
+/* Componentes */
+.layout {
+  background-color: #262626;
+}
+
+.nav {
+  background-color: #262626;
+}
+.nav ul {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-top: 3vh;
+  width: 100%;
+  font-size: 21pt;
+}
+.nav ul li {
+  list-style: none;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #e9e9e9;
+}
+
+.footer {
+  background-color: #262626;
+  color: #e9e9e9;
+  padding-left: 10vh;
+  margin-bottom: 10vh;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #e9e9e9;
+  font-size: 14pt;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+.layout > * {
+  flex: 1;
+}
+
+.derecha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
