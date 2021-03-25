@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+/* Variables */
+:root {
+  --primario: #262626;
+  --secundario: #000000;
+  --font-base: "Share Tech Mono";
+  --h1: 121px;
+  --h2: 81px;
+  --h3: 54px;
+  --h4: 27px;
+  --h5: 18px;
+  --h6: 16px;
+}
 
 body {
-  font-family: "Share Tech Mono";
+  font-family: var(--font-base);
 }
 h1,
 h2,
@@ -11,16 +23,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Share Tech Mono";
+  font-family: var(--font-base);
 }
 
 /* Componentes */
 .layout {
-  background-color: #262626;
+  background-color: var(--primario);
 }
 
 .nav {
-  background-color: #262626;
+  background-color: var(--primario);
 }
 .nav ul {
   display: flex;
