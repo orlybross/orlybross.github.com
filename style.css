@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 
 body {
-  font-family: "Share Tech Mono";
+  font-family: "Gotham-Ultra";
 }
 h1,
 h2,
@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Share Tech Mono";
+  font-family: "Gotham-Light";
 }
 
 /* Componentes */
@@ -22,22 +22,29 @@ h6 {
 }
 
 .izquierda {
-  flex: 3;
-  display: grid;
+  flex: 4;
+  /* display: grid; */
+  position: relative;
 }
+
+.izquierda > * {
+  position: sticky;
+  top: 0;
+}
+
 .nav {
   background-color: #262626;
   max-width: 90%;
 }
 .nav ul {
-  /* position: sticky; */
   top: 0px;
   display: flex;
   align-items: stretch;
   justify-content: space-between;
-  padding-top: 3vh;
-  width: 100%;
-  font-size: 21pt;
+  padding-top: 2vh;
+  padding-left: 6vw;
+  width: 97%;
+  font-size: 27pt;
 }
 .nav ul li {
   list-style: none;
@@ -47,9 +54,8 @@ h6 {
   color: #e9e9e9;
 }
 
-/* .img-wrapper {
-  background-color: rgb(205, 211, 214);
-} */
+.nav ul li a:hover {
+}
 
 .footer {
   background-color: transparent;
@@ -57,24 +63,41 @@ h6 {
 }
 
 .footer a {
-  /* position: sticky; */
   text-decoration: none;
   color: #e9e9e9;
   font-size: 14pt;
   position: absolute;
-  bottom: 20px;
-  left: 20px;
+  bottom: 50px;
+  left: 6vw;
 }
 
 .yo {
-  /* position: sticky; */
-  width: 500px;
-  height: 500px;
+  width: 750px;
+  height: 750px;
   margin: auto;
+  padding-bottom: 3vh;
+  position: absolute;
+  top: 200px;
 }
 
+/* 
+.parent {
+  border: 1px solid #333;
+  height: 250px;
+  position: relative;
+  width: 250px;
+}
+.child {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+*/
+
 .derecha {
-  flex: 2;
+  flex: 3;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-row-gap: 5px;
@@ -87,9 +110,28 @@ h6 {
   height: auto;
 }
 
-/* .izquierda div {
-  position: sticky;
-  top: -1px;
-  min-height: 100vh;
-  float: left;
-} */
+/* Ilustracion */
+.derecha-2 {
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  place-content: center;
+  position: relative;
+}
+.titulo-proyecto {
+  /* font-size: 108px;
+  position: absolute;
+  top: 30px; */
+  display: none;
+}
+.proyecto-imagenes {
+  padding-top: 150px;
+  flex: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  place-content: center;
+}
