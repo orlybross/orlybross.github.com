@@ -4,6 +4,7 @@
 
 body {
   font-family: "Gotham-Ultra";
+  cursor: url(https://res.cloudinary.com/dfkstvah2/image/upload/v1621360595/portafolio/cursor_eunbgi.svg);
 }
 h1,
 h2,
@@ -14,27 +15,58 @@ h6 {
   font-family: "Gotham-Light";
 }
 
+body {
+  /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width]))); */
+  font-size: calc(18px + (27 - 18) * ((100vw - 600px) / (1600 - 600)));
+}
+
 /* Componentes */
 .layout {
   background-color: #262626;
   display: flex;
-  height: 100vh;
+  flex-direction: row;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  max-height: 100vh;
+  /* background-image: url("https://res.cloudinary.com/dfkstvah2/image/upload/v1619542135/portafolio/yo_abu26t.svg")
+    no-repeat;
+  background-size: contain;
+  background-position: right center;
+  overflow: visible; */
+}
+
+@media screen and (max-width: 600px) {
+  .layout {
+    flex-direction: column;
+  }
 }
 
 .izquierda {
   flex: 4;
-  /* display: grid; */
+  height: 100vh;
+  min-height: 100vh;
+  display: grid;
   position: relative;
 }
 
-.izquierda > * {
+.izquierda * {
   position: sticky;
   top: 0;
+}
+
+.izquierda .yo {
+  position: absolute;
+  bottom: 0;
 }
 
 .nav {
   background-color: #262626;
   max-width: 90%;
+}
+.nav::after {
+  content: url("https://res.cloudinary.com/dfkstvah2/image/upload/v1619542135/portafolio/yo_abu26t.svg");
+  width: 50vw;
 }
 .nav ul {
   top: 0px;
@@ -44,10 +76,17 @@ h6 {
   padding-top: 2vh;
   padding-left: 6vw;
   width: 97%;
-  font-size: 27pt;
+  font-size: 27px;
 }
+
 .nav ul li {
   list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav ul li {
+    padding-right: 4px;
+  }
 }
 .nav ul li a {
   text-decoration: none;
@@ -55,6 +94,7 @@ h6 {
 }
 
 .nav ul li a:hover {
+  font-family: "Gotham-Light";
 }
 
 .footer {
@@ -110,6 +150,17 @@ h6 {
   height: auto;
 }
 
+@media screen and (max-width: 600px) {
+  .derecha {
+    flex: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    place-items: center;
+  }
+}
+
 /* Ilustracion */
 .derecha-2 {
   flex: 3;
@@ -134,4 +185,24 @@ h6 {
   grid-row-gap: 5px;
   grid-column-gap: 5px;
   place-content: center;
+}
+
+/* Proyecto */
+.proyecto {
+  display: grid;
+  border: 2px solid black;
+  position: absolute;
+}
+.proyecto-info {
+  flex: 1;
+  background-color: white;
+}
+.proyecto-info h1 {
+  margin: 15px;
+}
+.proyecto-info h6 {
+  margin: 15px;
+}
+.proyecto-imagen {
+  flex: 1;
 }
