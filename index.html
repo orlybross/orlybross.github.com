@@ -25,27 +25,43 @@
         </div>
       </div>
 
-      <!-- <div class="footer">
-        <a href="#"
-          >Orly<br />
-          Bross<br />
-          Bessudo
-        </a> -->
-        <img
-          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1619542135/portafolio/yo_abu26t.svg"
-          alt="Yo"
-          height="750"
-          width="750"
-          class="yo"
-        />
-      </div>
+      <!-- <img
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1619542135/portafolio/yo_abu26t.svg"
+        alt="Yo"
+        height="750"
+        width="750"
+        class="yo"
+      /> -->
     </div>
 
-    <div class="derecha">
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080932/portafolio/llaves_ak6imx.jpg"
-        alt=""
-      />
+    <div x-data="showInfo()" class="derecha">
+      <figure>
+        <a x-spread="trigger">
+          <img
+            src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080932/portafolio/llaves_ak6imx.jpg"
+            alt=""
+          />
+        </a>
+        <figcaption x-spread="info">
+          <div class="proyecto">
+            <div class="proyecto-info">
+              <h1>Titulo</h1>
+              <h6>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                iste nesciunt quibusdam quos, amet eius facilis asperiores sunt
+                deleniti accusantium voluptatibus repudiandae voluptas sed in
+                dicta optio quo, repellendus odit?
+              </h6>
+            </div>
+            <div class="proyecto-imagen">
+              <img
+                src="https://images.unsplash.com/photo-1619434008242-09f0e271f2bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMTk2MzQwNQ&ixlib=rb-1.2.1&q=80&w=400"
+                alt=""
+              />
+            </div>
+          </div>
+        </figcaption>
+      </figure>
       <img
         src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/espersonal_bkizaj.jpg"
         alt=""
@@ -135,7 +151,7 @@
         salt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/peces_hvhlzw.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621363113/portafolio/opera_c8vk2k.jpg"
         salt=""
       />
       <img
@@ -159,35 +175,35 @@
         salt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/entrada3_rdjxdk.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362781/portafolio/apple_ej6vyg.jpg"
         alt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618499625/portafolio/rocky_tpnzip.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362779/portafolio/r_s_ti6pjq.jpg"
         alt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618499944/portafolio/limpio-01_hry69e.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362777/portafolio/frutas-01_ubnzcn.jpg"
         salt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618500707/portafolio/clipper_u0f1sk.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621363688/portafolio/martillos_ztsuct.jpg"
         salt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/estrella_qpdvml.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621364548/portafolio/lulu2_dq8xp1.jpg"
         salt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/entrada3_rdjxdk.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621364963/portafolio/kris-01_ejy19b.jpg"
         alt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618499625/portafolio/rocky_tpnzip.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621366377/portafolio/cacao_eyrceg.jpg"
         alt=""
       />
       <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618499944/portafolio/limpio-01_hry69e.jpg"
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621366870/portafolio/zapata2_awmrhw.jpg"
         salt=""
       />
       <img
@@ -199,5 +215,7 @@
         salt=""
       />
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
