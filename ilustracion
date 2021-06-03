@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orly Bross - Comunicadora visual</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/modern-css-reset/dist/reset.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="layout">
+    <div class="izquierda">
+      <div class="nav">
+        <div class="nav-wrapper">
+          <ul>
+            <li><a class= "noilustracion" href="#">Diseño</a></li>
+            <li><a href="#">Ilustración</a></li>
+            <li><a class= "noilustracion" href="#">Fotografía</a></li>
+            <li><a class= "noilustracion" href="#">Orly</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="derecha-ilustracion">
+        <div class="proyecto-imagenes-ilustracion">
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362777/portafolio/frutas-01_ubnzcn.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621363688/portafolio/martillos_ztsuct.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083618/portafolio/cuerpo_lwaawu.jpg"
+          alt=""
+        />
+        <img
+        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621366377/portafolio/cacao_eyrceg.jpg"
+        alt=""
+      />
+      <img
+      src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/peces_hvhlzw.jpg"
+      alt=""
+    />
+    <img
+    src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083620/portafolio/truenos_lknjkp.jpg"
+    alt=""
+  />
+  <img
+  src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/pesadilla_jnj6aa.jpg"
+  alt=""
+/>
+<img
+src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/peyote_jfmz9t.jpg"
+alt=""
+/>
+      </div>
+    </div>
+  </body>
+</html>
