@@ -13,275 +13,196 @@
 
   <!-- https://cloudconvert.com/ -->
   <body class="layout">
-    <div class="izquierda">
-      <div class="nav">
-        <div class="nav-wrapper">
-          <ul>
-            <li><a href="#">Diseño</a></li>
-            <li><a href="#">Ilustración</a></li>
-            <li><a href="#">Fotografía</a></li>
-            <li><a href="#">Orly</a></li>
-          </ul>
-        </div>
-      </div>
+    <nav class="nav">
+      <ul role="list">
+        <li><a href="#">Diseño</a></li>
+        <li><a href="#">Ilustración</a></li>
+        <li><a href="#">Fotografía</a></li>
+        <li><a href="#">Orly</a></li>
+      </uli>
+    </nav>
 
-      <!-- <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1619542135/portafolio/yo_abu26t.svg"
-        alt="Yo"
-        height="750"
-        width="750"
-        class="yo"
-      /> -->
-    </div>
-
-    <div x-data="showInfo()" class="derecha">
-      <figure x-data="showInfo()">
-        <a x-spread="trigger">
-          <img
-            src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080932/portafolio/llaves_ak6imx.jpg"
-            alt=""
-          />
-        </a>
-        <figcaption class="info" x-spread="info">
-          <div class="proyecto">
-            <div class="proyecto-info">
-              <h1>La lucha libre mexicana</h1>
-              <p>
-                La lucha libre mexicana, un ícono cultural de mi país que reune
-                al lenguaje, los colores y el arte en un evento espectacular
-                para los amigos, la familia y quien quiera ser parte de él. Esta
-                es una infografía explicando las bases de la lucha libre e
-                ilustrando las tremendas acrobacias con las que nos encontramos
-                ahí.
-              </p>
+    <main x-data="showInfo()" class="main">
+        <figure>
+          <a x-spread="trigger">
+            <img
+              src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080932/portafolio/llaves_ak6imx.jpg"
+              alt=""
+            />
+          </a>
+          <figcaption x-spread="info">
+            <div class="proyecto">
+              <div class="proyecto-info">
+                <h2>Titulo</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                  iste nesciunt quibusdam quos, amet eius facilis asperiores
+                  sunt deleniti accusantium voluptatibus repudiandae voluptas
+                  sed in dicta optio quo, repellendus odit?
+                </p>
+              </div>
+              <div class="proyecto-imagen">
+                <img
+                  src="https://images.unsplash.com/photo-1619434008242-09f0e271f2bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMTk2MzQwNQ&ixlib=rb-1.2.1&q=80&w=400"
+                  alt=""
+                />
+              </div>
             </div>
-            <div class="proyecto-imagen">
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622567798/portafolio/triptico_ofbrhw.jpg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622567796/portafolio/llaves-02_f5i7uf.jpg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622567793/portafolio/llaves-04_nte0ed.jpg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622567791/portafolio/llaves-05_ziiqhj.jpg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622567789/portafolio/llaves-03_ihfs1w.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </figcaption>
-      </figure>
-
-      <figure x-data="showInfo()">
-        <a x-spread="trigger">
-          <img
-            src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/espersonal_bkizaj.jpg"
-            alt=""
-          />
-        </a>
-        <figcaption x-spread="info">
-          <div class="proyecto">
-            <div class="proyecto-info">
-              <h1>Es personal</h1>
-              <p>
-                Irónicamente, no es sencillo identificar tus propias cualidades
-                y tus propios defectos, aquellas características que fungen de
-                lápiz y goma en el libro de tu vida. Este proyecto presenta una
-                familia de cuatro pictogramas con las que me identifico, cada
-                una de ellas se ve limitada por un círculo, una figura que me
-                representa a mí y se ve alterada específicamente en cada ícono,
-                reflejando lo que sucede en mi vida a causa de aquella
-                característica. Elegir una figura que funcione como limitante
-                fue la clave para encontrarme con todos los caminos necesarios
-                para jugar con cada pictograma, rompiendo esta misma figura,
-                mientras que las líneas con determinado grosor, separación y
-                dirección ayudan a convertir a estos pictogramas en una sola
-                unidad. Yo me disperso, me empeño, exploto y me dejo ver.
-              </p>
-            </div>
-            <div class="proyecto-imagen">
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622695605/portafolio/repentina-02_v4fyoq.jpg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622695604/portafolio/repentina-01_pkwvtm.jpg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622695605/portafolio/repentina-03_p1q2x8.jpg"
-                alt=""
-              />
-              <img
-                src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622695605/portafolio/repentina-04_im9rej.jpg"
-                alt=""
-              />
-            </div>
-          </div>
-        </figcaption>
-      </figure>
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083618/portafolio/cuerpo_lwaawu.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/monstruos3_gxgmjl.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/hipo2_t2qi0f.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/cactaceas_c2yvk4.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/gaarin-03_ohtxaq.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616084054/portafolio/osos2_t4srzh.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/peyote_jfmz9t.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/lulu_u9c43g.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/in_rainbows_dwyhei.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616084054/portafolio/ES2_srhg2p.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/pesadilla_jnj6aa.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616084054/portafolio/cocteles2_zv4nji.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/aves_j23mbl.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1615475458/portafolio/viniles_ih5jiw.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083620/portafolio/truenos_lknjkp.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/zuzu_yulaee.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/disen%CC%83oweb_ates2z.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/steam_cgydul.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618496994/portafolio/parche_gamp_1_ieqbqe.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/peces_hvhlzw.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083618/portafolio/caballo_s6jd8c.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621363113/portafolio/opera_c8vk2k.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/entrada3_rdjxdk.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618499625/portafolio/rocky_tpnzip.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618499944/portafolio/limpio-01_hry69e.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618500707/portafolio/clipper_u0f1sk.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/estrella_qpdvml.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362781/portafolio/apple_ej6vyg.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362779/portafolio/r_s_ti6pjq.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362777/portafolio/frutas-01_ubnzcn.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621363688/portafolio/martillos_ztsuct.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621364548/portafolio/lulu2_dq8xp1.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621364963/portafolio/kris-01_ejy19b.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621366377/portafolio/cacao_eyrceg.jpg"
-        alt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621366870/portafolio/zapata2_awmrhw.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622695155/portafolio/chicharos_vybizq.jpg"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622695372/portafolio/molok_sadlam.png"
-        salt=""
-      />
-      <img
-        src="https://res.cloudinary.com/dfkstvah2/image/upload/v1622695494/portafolio/cafe_eeyogw.png"
-        salt=""
-      />
-    </div>
+          </figcaption>
+        </figure>
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/espersonal_bkizaj.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083618/portafolio/cuerpo_lwaawu.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/monstruos3_gxgmjl.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/hipo2_t2qi0f.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/cactaceas_c2yvk4.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/gaarin-03_ohtxaq.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616084054/portafolio/osos2_t4srzh.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/peyote_jfmz9t.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/lulu_u9c43g.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/in_rainbows_dwyhei.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616084054/portafolio/ES2_srhg2p.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/pesadilla_jnj6aa.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616084054/portafolio/cocteles2_zv4nji.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/aves_j23mbl.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1615475458/portafolio/viniles_ih5jiw.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083620/portafolio/truenos_lknjkp.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/zuzu_yulaee.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/disen%CC%83oweb_ates2z.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080931/portafolio/steam_cgydul.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618496994/portafolio/parche_gamp_1_ieqbqe.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/peces_hvhlzw.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083618/portafolio/caballo_s6jd8c.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621363113/portafolio/opera_c8vk2k.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616080930/portafolio/entrada3_rdjxdk.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618499625/portafolio/rocky_tpnzip.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618499944/portafolio/limpio-01_hry69e.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618500707/portafolio/clipper_u0f1sk.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/estrella_qpdvml.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362781/portafolio/apple_ej6vyg.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362779/portafolio/r_s_ti6pjq.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621362777/portafolio/frutas-01_ubnzcn.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621363688/portafolio/martillos_ztsuct.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621364548/portafolio/lulu2_dq8xp1.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621364963/portafolio/kris-01_ejy19b.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621366377/portafolio/cacao_eyrceg.jpg"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1621366870/portafolio/zapata2_awmrhw.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1618500707/portafolio/clipper_u0f1sk.jpg"
+          salt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfkstvah2/image/upload/v1616083619/portafolio/estrella_qpdvml.jpg"
+          salt=""
+        />
+    </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
     <script src="./scripts.js"></script>
   </body>
